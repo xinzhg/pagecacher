@@ -1,5 +1,7 @@
 package org.taobao.code.pagecache.helper;
 
+import org.apache.commons.lang.ObjectUtils;
+import org.apache.commons.lang.StringUtils;
 import org.taobao.code.pagecache.common.dataobject.CacheKeyValueParams;
 import org.taobao.code.pagecache.common.exception.CacheException;
 
@@ -73,4 +75,14 @@ public class MemoryCacheHelper {
         }
         return cacheKeyValueParamsesList;
     }
+
+    public boolean invaild(String namespace , String key) throws CacheException {
+        Object object = memoryCachePool.remove(namespace + key);
+        if (object != null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

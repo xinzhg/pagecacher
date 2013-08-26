@@ -83,13 +83,7 @@ public class MemoryCacheAdapter implements CacheServices {
 
     @Override
     public boolean invaild(String namespace, String key) throws CacheException {
-        CacheKeyValueParams cacheKeyValueParams = new CacheKeyValueParams();
-        cacheKeyValueParams.setNameSpace(namespace);
-        cacheKeyValueParams.setKey(key);
-        cacheKeyValueParams.setValue(null);
-        cacheKeyValueParams.setLastModifyTime(System.currentTimeMillis());
-        cacheKeyValueParams.setExpirationTime(0L);
-        return memoryCacheHelper.put(cacheKeyValueParams);
+        return memoryCacheHelper.invaild(namespace , key);
     }
 
     public CacheResult coverCacheKeyValueParams2CacheResult(CacheKeyValueParams cacheKeyValueParams) throws CacheException {
