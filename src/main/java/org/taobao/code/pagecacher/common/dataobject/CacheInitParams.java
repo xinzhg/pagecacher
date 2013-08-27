@@ -1,4 +1,4 @@
-package org.taobao.code.pagecache.common.dataobject;
+package org.taobao.code.pagecacher.common.dataobject;
 
 /**
  * Created with IntelliJ IDEA.

@@ -1,8 +1,8 @@
-package org.taobao.code.pagecache.services;
+package org.taobao.code.pagecacher.services;
 
-import org.taobao.code.pagecache.common.dataobject.CacheKeyValueParams;
-import org.taobao.code.pagecache.common.dataobject.CacheResult;
-import org.taobao.code.pagecache.common.exception.CacheException;
+import org.taobao.code.pagecacher.common.dataobject.CacheKeyValueParams;
+import org.taobao.code.pagecacher.common.dataobject.CacheResult;
+import org.taobao.code.pagecacher.common.exception.CacheException;
 
 import java.io.Serializable;
 import java.util.List;
